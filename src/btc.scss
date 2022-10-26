@@ -1,0 +1,148 @@
+:root {
+	--btc-primary:				rgb(0, 174, 233);
+
+	--btc-bg-body:				rgb(243, 243, 243);
+	--btc-bg-card:				rgb(255, 255, 255);
+
+	--btc-color:				rgb(117, 135, 150);
+	--btc-color-secondary:		rgb(85, 98, 109);
+	--btc-color-light:			rgb(255, 255, 255);
+
+	--btc-border:				rgb(231, 236, 247);
+
+	--btc-input:				rgb(255, 255, 255);
+
+
+
+
+	--btc-primary-dark:			rgb(27, 41, 94);
+
+	--btc-bg-body-dark:			rgb(3, 9, 33);
+	--btc-bg-card-dark:			rgb(27, 41, 94);
+
+	--btc-border-dark:			rgb(55, 88, 115);
+
+	--btc-input-dark:			transparent;
+}
+
+.root {
+	--border: var(--btc-border) !important;
+}
+
+.dark-theme {
+	--btc-primary:				var(--btc-primary-dark);
+
+	--btc-bg-body:				var(--btc-bg-body-dark);
+	--btc-bg-card:				var(--btc-bg-card-dark);
+
+	--btc-color:				var(--btc-color-dark);
+	--btc-color-secondary:		var(--btc-color-secondary-dark);
+	--btc-color-light:			var(--btc-color-light-dark);
+
+	--btc-border:				var(--btc-border-dark);
+
+	--btc-input:				var(--btc-input-dark);
+}
+
+header {
+	background: var(--btc-primary);
+}
+
+input, button, textarea, select {
+	background: var(--btc-input) !important;
+}
+
+select option {
+	padding: 10px;
+	background: rgba($color: var(--btc-bg-card), $alpha: 0.3);
+	text-shadow: 0 1px 0 rgba($color: var(--color), $alpha: 0.4);
+	color: #333;
+}
+
+.logo {
+	color: var(--btc-color-light);
+}
+
+.header {
+	min-height: 80px !important;
+
+	.menu {
+		>li {
+			>a,
+			button {
+				color: var(--btc-color-light) !important;
+				min-height: 50px !important;
+				background: transparent !important;
+			}
+
+			.sub-menu {
+				border-radius: 5px !important;
+				background: var(--btc-bg-card) !important;
+
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.pager {
+	code {
+		background: var(--btc-input) !important;
+	}
+}
+
+.root {
+	background: var(--btc-bg-body) !important;
+}
+
+.home {
+	.search {
+		max-width: var(--container-width);
+		padding: 0 20px !important;
+		margin: 50px auto;
+		background: var(--btc-bg-body) !important;
+
+		>div {
+			width: 100% !important;
+
+			input[type=search] {
+				border-radius: 5px 0 0 5px !important;
+			}
+
+			button {
+				border-radius: 0 5px 5px 0 !important;
+			}
+		}
+
+		h1 {
+			display: none;
+		}
+	}
+
+	.container {
+		margin-top: 0 !important;
+	}
+
+	.card {
+		padding: 0 !important;
+		margin-bottom: 20px;
+	}
+
+	.ls-icon {
+		background: var(--btc-bg-body);
+	}
+}
+
+.card, .panel {
+	background: var(--btc-bg-card) !important;
+}
+
+.card-content {
+	background: transparent !important;
+}
+
+footer {
+	background: var(--btc-bg-card) !important;
+}
